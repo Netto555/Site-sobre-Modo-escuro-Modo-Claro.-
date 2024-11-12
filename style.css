@@ -1,0 +1,135 @@
+@font-face{
+    font-family: duda;
+    src: url(./deep_shadow/Deep\ Shadow.ttf);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    background-color: #4d1111;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header button {
+    background-color: #ad3030;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+}
+
+div {
+    width: 50%;
+}
+
+img {
+    height: 400px;
+
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 4em;
+    font-family: duda;
+}
+
+.projeto {
+    background-color: #290606;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 40%;
+    height: 200px;
+}
+
+/* MODO ESCURO----- */
+
+.dark-theme {
+    background-color: #f5f5dc;
+    color: #000000;
+}
+
+.dark-theme header {
+    background-color: rgb(212, 137, 137);
+}
+
+.dark-theme header button {
+
+    background-color: rgb(199, 79, 79);
+    color: #201818;
+}
+
+.dark-theme .projeto {
+    background-color: #f07979;
+    color: #290606;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #sobre {
+        flex-direction: column-reverse;
+    }
+
+    div {
+        width: 100%;
+    }
+    
+    #projetos {
+        width: 100%;
+    }
+    
+    .projeto {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+}
+
